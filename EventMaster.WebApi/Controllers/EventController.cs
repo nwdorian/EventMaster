@@ -53,6 +53,14 @@ public class EventController : ControllerBase
         return NoContent();
     }
 
+    [HttpDelete("{id}", Name = "DeleteManyEvents")]
+    [ProducesResponseType(204)]
+    [ProducesResponseType(404)]
+    public IActionResult DeleteManyEvents(int id)
+    {
+        return NoContent();
+    }
+
     private List<Event> GenerateSampleEvents()
     {
         return new List<Event>
