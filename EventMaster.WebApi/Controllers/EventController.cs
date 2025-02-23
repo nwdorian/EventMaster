@@ -14,10 +14,6 @@ public class EventController : ControllerBase
         events = GenerateSampleEvents();
     }
 
-    /// <summary>
-    /// Get all events.
-    /// </summary>
-    /// <returns>List of events.</returns>
     [HttpGet(Name = "GetAllEvents")]
     [ProducesResponseType(200, Type = typeof(IEnumerable<Event>))]
     public IActionResult GetAllEvents()
@@ -25,11 +21,6 @@ public class EventController : ControllerBase
         return Ok(events);
     }
 
-    /// <summary>
-    /// Get an event by ID.
-    /// </summary>
-    /// <param name="id">Event ID.</param>
-    /// <returns>Event details if found, otherwise returns NotFound-</returns>
     [HttpGet("{id}", Name = "GetEventById")]
     [ProducesResponseType(200, Type = typeof(Event))]
     [ProducesResponseType(404)]
@@ -39,11 +30,6 @@ public class EventController : ControllerBase
         return entityById != null ? Ok(entityById) : NotFound();
     }
 
-    /// <summary>
-    /// Create a new event.
-    /// </summary>
-    /// <param name="entity">Event details for creation.</param>
-    /// <returns>Created event details.</returns>
     [HttpPost(Name = "CreateEvent")]
     [ProducesResponseType(201, Type = typeof(Event))]
     public IActionResult CreateEvent([FromBody] Event entity)
@@ -51,12 +37,6 @@ public class EventController : ControllerBase
         return Created("/api/event", entity);
     }
 
-    /// <summary>
-    /// Update an existing event.
-    /// </summary>
-    /// <param name="id">Event ID.</param>
-    /// <param name="entity">Updated event details.</param>
-    /// <returns>NoContent if successful, NotFound if the event is not found.</returns>
     [HttpPut("{id}", Name = "UpdateEvent")]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
@@ -65,11 +45,6 @@ public class EventController : ControllerBase
         return NoContent();
     }
 
-    /// <summary>
-    /// Delete an event by ID.
-    /// </summary>
-    /// <param name="id">Event ID.</param>
-    /// <returns>NoContent if successful, NotFound if the event is not found.</returns>
     [HttpDelete("{id}", Name = "DeleteEvent")]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
