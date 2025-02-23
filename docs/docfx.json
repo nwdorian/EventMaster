@@ -6,7 +6,6 @@
         {
           "src": "../../EventMaster",
           "files": [
-            "**/*.csproj",
             "restapi/**"
           ]
         }
