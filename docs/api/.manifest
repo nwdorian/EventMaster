@@ -1,0 +1,17 @@
+{
+  "EventMaster.WebApi.Controllers": "EventMaster.WebApi.Controllers.yml",
+  "EventMaster.WebApi.Controllers.EventController": "EventMaster.WebApi.Controllers.EventController.yml",
+  "EventMaster.WebApi.Controllers.EventController.#ctor": "EventMaster.WebApi.Controllers.EventController.yml",
+  "EventMaster.WebApi.Controllers.EventController.CreateEvent(EventMaster.WebApi.Models.Event)": "EventMaster.WebApi.Controllers.EventController.yml",
+  "EventMaster.WebApi.Controllers.EventController.DeleteEvent(System.Int32)": "EventMaster.WebApi.Controllers.EventController.yml",
+  "EventMaster.WebApi.Controllers.EventController.GetAllEvents": "EventMaster.WebApi.Controllers.EventController.yml",
+  "EventMaster.WebApi.Controllers.EventController.GetEventById(System.Guid)": "EventMaster.WebApi.Controllers.EventController.yml",
+  "EventMaster.WebApi.Controllers.EventController.UpdateEvent(System.Int32,EventMaster.WebApi.Models.Event)": "EventMaster.WebApi.Controllers.EventController.yml",
+  "EventMaster.WebApi.Models": "EventMaster.WebApi.Models.yml",
+  "EventMaster.WebApi.Models.Event": "EventMaster.WebApi.Models.Event.yml",
+  "EventMaster.WebApi.Models.Event.Date": "EventMaster.WebApi.Models.Event.yml",
+  "EventMaster.WebApi.Models.Event.Id": "EventMaster.WebApi.Models.Event.yml",
+  "EventMaster.WebApi.Models.Event.Location": "EventMaster.WebApi.Models.Event.yml",
+  "EventMaster.WebApi.Models.Event.Name": "EventMaster.WebApi.Models.Event.yml",
+  "EventMaster.WebApi.Models.Event.Speakers": "EventMaster.WebApi.Models.Event.yml"
+}

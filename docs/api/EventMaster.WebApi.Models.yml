@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: EventMaster.WebApi.Models
+  commentId: N:EventMaster.WebApi.Models
+  id: EventMaster.WebApi.Models
+  children:
+  - EventMaster.WebApi.Models.Event
+  langs:
+  - csharp
+  - vb
+  name: EventMaster.WebApi.Models
+  nameWithType: EventMaster.WebApi.Models
+  fullName: EventMaster.WebApi.Models
+  type: Namespace
+  assemblies:
+  - EventMaster.WebApi
+references:
+- uid: EventMaster.WebApi.Models.Event
+  commentId: T:EventMaster.WebApi.Models.Event
+  parent: EventMaster.WebApi.Models
+  href: EventMaster.WebApi.Models.Event.html
+  name: Event
+  nameWithType: Event
+  fullName: EventMaster.WebApi.Models.Event
+- uid: EventMaster.WebApi.Models
+  commentId: N:EventMaster.WebApi.Models
+  href: EventMaster.html
+  name: EventMaster.WebApi.Models
+  nameWithType: EventMaster.WebApi.Models
+  fullName: EventMaster.WebApi.Models
+  spec.csharp:
+  - uid: EventMaster
+    name: EventMaster
+    href: EventMaster.html
+  - name: .
+  - uid: EventMaster.WebApi
+    name: WebApi
+    href: EventMaster.WebApi.html
+  - name: .
+  - uid: EventMaster.WebApi.Models
+    name: Models
+    href: EventMaster.WebApi.Models.html
+  spec.vb:
+  - uid: EventMaster
+    name: EventMaster
+    href: EventMaster.html
+  - name: .
+  - uid: EventMaster.WebApi
+    name: WebApi
+    href: EventMaster.WebApi.html
+  - name: .
+  - uid: EventMaster.WebApi.Models
+    name: Models
+    href: EventMaster.WebApi.Models.html

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>EventMaster.WebApi | v1 | EventMaster </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="EventMaster.WebApi | v1 | EventMaster ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EventMaster">
+            EventMaster
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="EventMaster.WebApi | v1/1.0.0">
+
+<h1 id="EventMaster_WebApi___v1_1_0_0" data-uid="EventMaster.WebApi | v1/1.0.0" class="text-capitalize text-break">EventMaster.WebApi | v1</h1>
+<h2 id="EventMaster_WebApi___v1_1_0_0_tag_Event">Event</h2>
+
+
+
+  <h3 id="EventMaster_WebApi___v1_1_0_0_GetAllEvents" data-uid="EventMaster.WebApi | v1/1.0.0/GetAllEvents" class="text-capitalize">GetAllEvents</h3>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">GET /api/event</code></pre>
+  </div>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">200</span></td>
+        <td>
+
+              <a href="#Event" class="typelink"><wbr>Event</a>[]
+        </td>
+        <td><p>OK</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <h3 id="EventMaster_WebApi___v1_1_0_0_CreateEvent" data-uid="EventMaster.WebApi | v1/1.0.0/CreateEvent" class="text-capitalize">CreateEvent</h3>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">POST /api/event</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">*body</span></td>
+        <td>
+
+              <a href="#Event" class="typelink"><wbr>Event</a>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td>
+
+              <a href="#Event" class="typelink"><wbr>Event</a>
+        </td>
+        <td><p>Created</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <h3 id="EventMaster_WebApi___v1_1_0_0_GetEventById" data-uid="EventMaster.WebApi | v1/1.0.0/GetEventById" class="text-capitalize">GetEventById</h3>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">GET /api/event/{id}</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>
+            
+
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">200</span></td>
+        <td>
+
+              <a href="#Event" class="typelink"><wbr>Event</a>
+        </td>
+        <td><p>OK</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">404</span></td>
+        <td>
+
+              <a href="#ProblemDetails" class="typelink"><wbr>Problem<wbr>Details</a>
+        </td>
+        <td><p>Not Found</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <h3 id="EventMaster_WebApi___v1_1_0_0_UpdateEvent" data-uid="EventMaster.WebApi | v1/1.0.0/UpdateEvent" class="text-capitalize">UpdateEvent</h3>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">PUT /api/event/{id}</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>
+            
+
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*body</span></td>
+        <td>
+
+              <a href="#Event" class="typelink"><wbr>Event</a>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">204</span></td>
+        <td>
+            
+
+        </td>
+        <td><p>No Content</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">404</span></td>
+        <td>
+
+              <a href="#ProblemDetails" class="typelink"><wbr>Problem<wbr>Details</a>
+        </td>
+        <td><p>Not Found</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <h3 id="EventMaster_WebApi___v1_1_0_0_DeleteEvent" data-uid="EventMaster.WebApi | v1/1.0.0/DeleteEvent" class="text-capitalize">DeleteEvent</h3>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/event/{id}</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>
+            
+
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">204</span></td>
+        <td>
+            
+
+        </td>
+        <td><p>No Content</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">404</span></td>
+        <td>
+
+              <a href="#ProblemDetails" class="typelink"><wbr>Problem<wbr>Details</a>
+        </td>
+        <td><p>Not Found</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+<h2 id="definitions">Definitions</h2>
+
+  <h3 id="Event" class="text-capitalize"><wbr>Event</h3>
+  <table class="table table-bordered table-condensed">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Notes</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><span class="parametername">id</span></td>
+              <td>
+                  string
+                      (uuid)
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">name</span></td>
+              <td>
+                  string
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">date</span></td>
+              <td>
+                  string
+                      (date-time)
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">location</span></td>
+              <td>
+                  string
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">speakers</span></td>
+              <td>
+                  array
+
+              </td>
+              <td></td>
+          </tr>
+      </tbody>
+  </table>
+
+  <h3 id="ProblemDetails" class="text-capitalize"><wbr>Problem<wbr>Details</h3>
+  <table class="table table-bordered table-condensed">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Notes</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><span class="parametername">type</span></td>
+              <td>
+                  string
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">title</span></td>
+              <td>
+                  string
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">status</span></td>
+              <td>
+                  integer
+                      (int32)
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">detail</span></td>
+              <td>
+                  string
+
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td><span class="parametername">instance</span></td>
+              <td>
+                  string
+
+              </td>
+              <td></td>
+          </tr>
+      </tbody>
+  </table>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

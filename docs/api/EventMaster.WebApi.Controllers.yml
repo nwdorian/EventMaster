@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: EventMaster.WebApi.Controllers
+  commentId: N:EventMaster.WebApi.Controllers
+  id: EventMaster.WebApi.Controllers
+  children:
+  - EventMaster.WebApi.Controllers.EventController
+  langs:
+  - csharp
+  - vb
+  name: EventMaster.WebApi.Controllers
+  nameWithType: EventMaster.WebApi.Controllers
+  fullName: EventMaster.WebApi.Controllers
+  type: Namespace
+  assemblies:
+  - EventMaster.WebApi
+references:
+- uid: EventMaster.WebApi.Controllers.EventController
+  commentId: T:EventMaster.WebApi.Controllers.EventController
+  href: EventMaster.WebApi.Controllers.EventController.html
+  name: EventController
+  nameWithType: EventController
+  fullName: EventMaster.WebApi.Controllers.EventController

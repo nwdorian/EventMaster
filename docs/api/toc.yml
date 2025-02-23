@@ -1,0 +1,17 @@
+### YamlMime:TableOfContent
+items:
+- uid: EventMaster.WebApi.Controllers
+  name: EventMaster.WebApi.Controllers
+  type: Namespace
+  items:
+  - uid: EventMaster.WebApi.Controllers.EventController
+    name: EventController
+    type: Class
+- uid: EventMaster.WebApi.Models
+  name: EventMaster.WebApi.Models
+  type: Namespace
+  items:
+  - uid: EventMaster.WebApi.Models.Event
+    name: Event
+    type: Class
+memberLayout: SamePage
